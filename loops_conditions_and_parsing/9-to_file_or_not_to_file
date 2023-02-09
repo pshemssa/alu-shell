@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#bash script that gives you information about the bestschool file
+found=0
+for file in *; do
+    if [ "$file" == "bestschool" ]
+then
+	let found=1
+	echo "bestschool file exists"
+if [ -s "$file" ]
+	    then
+	    echo "bestschool file is not empty"
+else
+	    echo "bestschool file is empty"
+fi
+	if [ -f "$file" ]
+	    then
+	    echo "bestschool is a regular file"
+fi
+    fi
+done
+
+if [ $found -eq 0 ]
+    then
+    echo "bestschool does not exist"
+fi
