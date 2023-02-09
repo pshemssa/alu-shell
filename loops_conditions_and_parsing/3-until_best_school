@@ -3,5 +3,5 @@
 counter=10
 until [  $counter -lt 1 ]; do
     echo "Best School"
-    (( i--))
+    ((counter--))
 done
