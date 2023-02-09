@@ -7,6 +7,6 @@ while [ $counter -lt 10 ]; do
 	echo -e "Best School\nHi"
  else
 	echo "Best School"
-fi
-    let counter=counter+1
+    fi
+    ((counter++))
 done
